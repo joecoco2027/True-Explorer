@@ -1,0 +1,705 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section 
+{
+    display: block;
+}
+body{
+    background-color: white;
+}
+
+#header {
+    z-index: 1;
+    background: white;
+    position: fixed;
+    display: block; 
+    width: 100dvw;
+    padding: 10px;
+    box-shadow: 0 0px 30px 2px  rgba(87, 86, 86, 0.5);
+}
+#theme i{
+    color: white;
+    padding: 5px;
+    background-color: black;
+    border-radius: 50px;
+}
+#theme i:hover{
+    color: rgb(255, 196, 0);
+    box-shadow: 0px 0px 10px 10px rgba(211, 158, 11, 0.5);
+    background-color: white;
+}
+#logo h1 a{
+    color: rgb(23, 120, 238);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    margin-left: 10cqh;
+    margin-right: 15%;
+}
+
+#navul {
+    padding-top: 4px;
+}
+#navul li{
+    display: inline-block;
+    padding: 0px;
+    height: 100%;
+    margin-right: 2%;
+
+}
+#navul li a{
+    color: rgb(4, 35, 75);
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: rgb(16, 110, 233);
+}
+#navul li a:hover {
+    color: rgb(16, 110, 233);
+    border-bottom-color: rgb(16, 110, 233);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    transition: all 0.5s ease;  
+}
+
+
+#home {
+    height: 100dvh;
+    background-image: url("/static/images/images\ \(17\).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: rgba(25, 119, 241, 0.7);
+}
+
+#contents {
+    position: relative;
+    z-index: 2;
+    top: 40%;
+    text-align: center;
+}
+
+#contents h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 70px;
+}
+#contents h2 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+#contents h3 {
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+#contents a{
+    padding: 25px;
+    border-radius: 50px 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background-color: rgb(0, 133, 241);
+    font-size: x-large;
+    font-weight: 900;
+}
+
+#about {
+    padding-top: 20px;
+    height: 100dvh;
+    background-color: rgba(149, 196, 240, 0.5);
+}
+
+#abtcontents {
+    padding-left: 15%;
+    float: left;
+    width: 50%;
+}
+#abouth{
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+
+#about img{
+    border-radius: 20px;
+    height: 600px;
+    width: 25%;
+}
+
+.contentabt {
+    display: block;
+    font-size: large;
+    padding-bottom: 10px;
+}
+
+#abtch {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    
+}
+
+#abtcontents ul {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#abtcontents li{
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+#abtcontents li::marker {
+    color: blue;
+}
+#connect{
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19, 59, 105);
+    height: fit-content;
+    padding: 20px;
+    align-self: center;
+    align-items: center;
+}
+#connecth{
+    text-align: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#connect .socialconnect{
+    background-color: white;
+    border-radius: 10px 10px;
+    padding: 50px;
+    text-align: center;
+}
+#connect .ln{
+    color: blue;
+}
+#connect .yt{
+    color: red;
+}
+#connect .x{
+    color: black;
+}
+#connect .ig{
+    color: rgb(231, 9, 252);
+}
+#connect .go{
+    color: rgb(31, 60, 223);
+}
+#connect a p{
+    color: black;
+    font-style: italic;
+}
+#connect ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+#connect ul li:hover{
+    transform: translateY(-10px);
+    transition: all 0.6s ease;
+}
+#latest {
+    background-color: rgba(149, 196, 240, 0.5);
+}
+#latest h1{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    padding: 3%;
+
+}
+#latest h2{
+    float: left;
+    margin-left: 40%;
+    margin-right: 2%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#latest ul{
+    display: inline-block;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+#latest ul li a{
+    padding: 10px;
+    background-color: white;
+    margin-right: 10px;
+    
+    
+}
+
+#latest .pp {
+    color: orange;
+}
+
+#latest .ln {
+    color: rgb(0, 133, 241);
+}
+#latest .yt {
+    color: red;
+}
+#latest .pp:hover {
+    color: white;
+    background-color: orange;
+}
+
+#latest .ln:hover {
+    color: white;
+    background-color: rgb(0, 133, 241);
+}
+#latest .yt:hover {
+    color: white;
+    background-color: red;
+}
+#latest .button {
+    padding: 2%;
+    text-align: center;
+    
+}
+#more {
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+#more:hover {
+    background-color: black;
+    color: white;
+    
+}
+
+#updates {
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+#expertise {
+    margin-top: 2%;
+    background-color:rgba(149, 196, 240, 0.5);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom : 3%;
+}
+
+#expertise .first {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+   
+}
+
+#expertizecontents{
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 20px;
+    justify-content: center;border-radius: 10px 10px;
+}
+#expertizecontents .expertiz {
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.expertiz i{
+    font-size: xx-large;
+    padding: 10px;
+    margin-left: 40%;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.expertiz h1{
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    padding: 10px;
+    text-align: center;
+}
+#expertise .description{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#expertizecontents .expertiz:hover{
+    transform: translateY(-10px);
+    border: 1px solid black;
+    transition: all 1s ease;
+}
+#expertizecontents .expertiz:hover i{
+    color: rgb(5, 184, 255);
+    transform: rotate(360deg);
+    transition: all 0.5s ease;
+}
+
+#hl{
+  height: 100%;
+  position: absolute;
+  width: 5px;
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 1), rgba(0, 0, 0, 1));
+  z-index: 10;
+}
+
+#timelineh{
+    text-align: center;
+    padding: 2%;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: fantasy;
+}
+
+#timelineC{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 10%;
+}
+
+#timeline .conty{
+    width: 50%;
+    position: relative;
+}
+.odd{
+    position: absolute;
+    top: 50%;
+    left: 77%;
+}
+.even{
+    position: absolute;
+    top: 45%;
+    left: -13%;
+
+}
+.icon{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+}
+.icon:hover{
+    background-color: rgb(0, 133, 241);
+    transition: all 0.5s ease;
+}
+
+.data {
+    box-shadow: 0 1px 5px 1px rgb(233, 220, 220);
+    padding: 40px;
+    margin: 10px;
+    width: 50%;
+    position: relative;
+}
+.data:hover{
+    background-color: rgb(239, 244, 252);
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+#timeline .conty:hover i{
+    background-color: rgb(0, 133, 241);
+    transition: all 0.5s ease;
+}
+#timeline .conty:nth-child(even){
+   align-self: baseline;
+   margin-left: 10%;
+   
+}
+#timeline .conty:nth-child(odd){
+    align-self: safe;
+    margin-left: 60%;
+}
+
+#timeline .data h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#blogs {
+    
+    background-color: rgba(149, 196, 240, 0.5);
+}
+#blogh{
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+}
+
+#blogs .blogcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog{
+    max-width: 30%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.blog:hover {
+    transform: translateY(-5px);
+    border: 1px solid rgb(0, 133, 241);
+    transition: all 0.5s ease;
+}
+.blog h1{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#blogs .description{
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+
+}
+.blog a {
+    color: white;
+    background-color: rgb(0, 133, 241);
+    padding: 15px;
+    text-align: center;
+    margin-left: 40%;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+
+}
+
+.blog a:hover{
+    background-color: black;
+    transition: all 1s ease;
+}
+
+#contact {
+    background-color: rgba(149, 196, 240, 0.5);
+    padding: 10px;
+}
+
+#contacth {
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+#contact p{
+    text-align: center;
+    margin: 0 auto;
+    word-break: break-word;
+    max-width: 600px;
+    padding: 10px;
+    font-size: larger;
+}
+.contz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.formy {
+    background-color: white;
+    width: 30%;
+    display: block;
+    height: 500px;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 20px;
+}
+.formy form{
+    padding: 30px;
+    display: block;
+}
+.formy form Label h1{
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.formy form input{
+    padding: 20px;
+    display: block;
+    width: 90%;
+    background-color: rgba(241, 241, 241, 0.6);
+}
+.formy form textarea{
+    width: 98%;
+    height: 100px;
+}
+.formy a {
+    color: white;
+    background-color: rgb(0, 133, 241);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    padding: 10px;
+    width: 90%;
+    margin-left: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    border-radius: 10px;
+
+}
+#message{
+    height: 100px;
+}
+.contacts{
+    background-color: white;
+    width: 30%;
+    display: block;
+    clear: both;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.contacts h1{
+    display: block;
+    padding: 30px;
+    clear: both;
+}
+
+.contacts img{
+    float: left;
+}
+.contacts a{
+    padding: 20px;
+    position: absolute;
+    
+}
+
+
+
+
+#footer {
+    background-color: rgb(19, 59, 105);
+    color: white;
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    clear: both;
+}
+#ff {
+    padding-bottom: 10px;
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    clear: both;
+}
+
+#links{
+    float: left;
+    margin-right: 70%;
+}
+#links ul li a:hover{
+    color: blue;
+    transition: all 0.5s ease;
+}
+#footer h1 {
+    font-style: normal;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+#footer ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+#footer ul li a{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+#socials ul li{
+    display: inline-block;
+}
+#socials ul li a:hover {
+    color: blue;
+    transition: all 0.5s ease;
+}
+#socials ul li:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+#footer p{
+    clear: both;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+}
