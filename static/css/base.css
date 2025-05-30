@@ -89,7 +89,7 @@ body{
 
 #home {
     height: 100dvh;
-    background-image: url("/static/images/images\ \(17\).jpeg");
+    background-image: url("./../images/images.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
