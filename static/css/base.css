@@ -121,7 +121,7 @@ body{
 
 #home {
     height: 100dvh;
-    background-image: url("./../static/images/abdul2.jpg");
+    background-image: url("../images/abdul2.jpg");
     background-size: contain;
     display: flex;
     flex-direction: row;
